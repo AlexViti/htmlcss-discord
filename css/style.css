@@ -73,7 +73,7 @@ nav li>a {
 	font-weight: 500;
 }
 
-.btn-log-in, .btn-download {
+.btn-log-in, .btn-download-top {
 	background-color: white;
 	color: black;
 
@@ -164,7 +164,8 @@ header .btn {
 }
 
 .bg-block:last-child {
-	height: 1000px;
+	height: 1200px;
+	text-align: center;
 }
 
 .bg-block:last-child img {
@@ -180,4 +181,23 @@ section h2 {
 
 section p {
 	font-size: 1.2rem;
+}
+
+.bg-block:last-child h3 {
+	font-size: 1.7rem;
+	font-weight: 700;
+
+	width: fit-content;
+	margin: 0 auto 2rem;
+	padding: 1.1em 1.6em 0;
+
+	background-image: url(../img/stars.svg);
+	background-repeat: no-repeat;
+}
+
+.btn-download-bottom {
+	background-color: #8ea1e1;
+	color: white;
+	font-size: 1.2rem;
+
 }
