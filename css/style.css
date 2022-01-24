@@ -100,6 +100,8 @@ a {
 	transform: translate(0, -50%);
 }
 
+/* Main rules */
+
 /* Header rules */
 header {
 	background-image: url(../img/jumbo.png);
@@ -149,6 +151,8 @@ header .btn {
 	
 	margin-right: .5em;
 }
+
+/* Sections rules */
 
 .bg-block {
 	width: 100%;
@@ -218,20 +222,30 @@ section p {
 	font-size: 1.2rem;
 }
 
+/* Footer rules*/
+
 footer {
 	background-color: #23272a;
 	color: white;
 }
 
 .left-footer {
+	width: 35%;
 	float: left;
 }
+
+
 
 .language-selection img{
 	height: 1em;
 }
 
-.bottom-nav>ul>li {
+.bottom-nav {
 	display: inline-block;
-	float: right;
+	width: 65%;
+}
+
+.bottom-nav>ul>li {
+	float: left;
+	width: 25%;
 }
