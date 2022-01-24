@@ -15,7 +15,7 @@ html {
 } */
 
 .centered {
-	max-width: 1000px;
+	max-width: 1200px;
 	margin: auto;
 	position: relative;
 }
@@ -65,19 +65,74 @@ nav li>a {
 
 .btn {
 	display: inline-block;
-	height: 2em;
-	line-height: 2em;
+	height: 2.6em;
+	line-height: 2.6em;
 	vertical-align: middle;
-	border-radius: 1em;
-	padding: 0 1em;
+	border-radius: 1.3em;
+	padding: 0 1.3em;
+	font-weight: 500;
 }
 
-.log-in {
+.btn-log-in, .btn-download {
 	background-color: white;
 	color: black;
 
+}
+
+.btn-log-in {
 	position: absolute;
 	right: 0;
 	top: 50%;
 	transform: translate(0, -50%);
+}
+
+header {
+	background-image: url(../img/jumbo.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	position: relative;
+	height: 700px;
+
+	color: white;
+	text-align: center;
+}
+
+.vertical-centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+header h1, header p {
+	width: 82%;
+	margin: auto;
+}
+
+header h1 {
+	font-size: 4rem;
+	margin-bottom: 3rem;
+}
+
+header p {
+	font-size: 1.3rem;
+	margin-bottom: 2rem;
+}
+
+header .btn {
+	font-size: 1.3rem;
+}
+
+.btn-open-in-browser {
+	background-color: #23272a;
+	color: white;
+}
+
+.fa-long-arrow-alt-down {
+	font-size: .8em;
+	vertical-align: 1px;
+	font-weight: 600;
+	margin-right: .5em;
 }
