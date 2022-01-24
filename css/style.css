@@ -8,11 +8,11 @@ html {
 	font-family: sans-serif;
 }
 
-/* .clearfix::after {
+.clearfix::after {
 	content:'';
 	display: table;
 	clear: both;
-} */
+}
 
 .centered {
 	max-width: 1200px;
@@ -104,10 +104,11 @@ header {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	width: fit-content;
 }
 
 header h1, header p {
-	width: 82%;
+	width: 65%;
 	margin: auto;
 }
 
@@ -135,4 +136,48 @@ header .btn {
 	vertical-align: 1px;
 	font-weight: 600;
 	margin-right: .5em;
+}
+
+.bg-block {
+	width: 100%;
+	position: relative;
+}
+
+.bg-block:not(:last-child) {
+	height: 900px;
+}
+
+.bg-block:nth-of-type(even) {
+	background-color: #f6f6f6;
+}
+
+.bg-block:nth-of-type(odd) img {
+	float: left;
+	width: 60%;
+	margin-right: 9rem;
+}
+
+.bg-block:nth-of-type(2) img {
+	float: right;
+	width: 60%;
+	margin-left: 9rem;
+}
+
+.bg-block:last-child {
+	height: 1000px;
+}
+
+.bg-block:last-child img {
+	width: 100%;
+}
+
+section h2 {
+	font-size: 2.8rem;
+	margin-top: 2rem;
+	margin-bottom: 1.5rem;
+	font-weight: 700;
+}
+
+section p {
+	font-size: 1.2rem;
 }
