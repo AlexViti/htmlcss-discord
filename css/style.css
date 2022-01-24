@@ -1,8 +1,10 @@
-* {
+* { /* Reset*/
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
+
+/* General rules */
 
 html {
 	font-family: sans-serif;
@@ -20,29 +22,51 @@ html {
 	position: relative;
 }
 
-.top-nav {
-	background-color: #3161e0;
-	height: 4rem;
-	text-align: center;
-}
-
-.logo {
-	height: 2rem;
+.vertical-centered {
+	width: fit-content;
 	
 	position: absolute;
-	left: 0;
 	top: 50%;
-	transform: translate(0, -50%);
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+nav ul {
+	list-style: none;
 }
 
 a {
 	text-decoration: none;
 }
 
+.logo {
+	height: 2rem;
+}
 
-nav ul {
-	list-style: none;
+.btn {
 	display: inline-block;
+	height: 2.6em;
+	line-height: 2.6em;
+	vertical-align: middle;
+	border-radius: 1.3em;
+	padding: 0 1.3em;
+	
+	font-weight: 500;
+}
+
+/* Top navbar rules */
+.top-nav {
+	background-color: #3161e0;
+	
+	height: 4rem;
+	text-align: center;
+}
+
+.top-nav .logo {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translate(0, -50%);
 }
 
 .top-nav li>a {
@@ -55,22 +79,12 @@ nav ul {
 	font-weight: 600;
 }
 
-nav ul>li {
+.top-nav ul>li {
 	display: inline-block;
 }
 
-nav li>a {
+.top-nav li>a {
 	color: white;
-}
-
-.btn {
-	display: inline-block;
-	height: 2.6em;
-	line-height: 2.6em;
-	vertical-align: middle;
-	border-radius: 1.3em;
-	padding: 0 1.3em;
-	font-weight: 500;
 }
 
 .btn-log-in, .btn-download-top {
@@ -86,26 +100,21 @@ nav li>a {
 	transform: translate(0, -50%);
 }
 
+/* Header rules */
 header {
 	background-image: url(../img/jumbo.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 
-	position: relative;
 	height: 700px;
+
+	position: relative;
 
 	color: white;
 	text-align: center;
 }
 
-.vertical-centered {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: fit-content;
-}
 
 header h1, header p {
 	width: 65%;
@@ -114,11 +123,13 @@ header h1, header p {
 
 header h1 {
 	font-size: 4rem;
+	
 	margin-bottom: 3rem;
 }
 
 header p {
 	font-size: 1.3rem;
+	
 	margin-bottom: 2rem;
 }
 
@@ -133,8 +144,9 @@ header .btn {
 
 .fa-long-arrow-alt-down {
 	font-size: .8em;
-	vertical-align: 1px;
 	font-weight: 600;
+	vertical-align: 1px;
+	
 	margin-right: .5em;
 }
 
@@ -152,19 +164,22 @@ header .btn {
 }
 
 .bg-block:nth-of-type(odd) img {
-	float: left;
 	width: 60%;
 	margin-right: 9rem;
+	
+	float: left;
 }
 
 .bg-block:nth-of-type(2) img {
-	float: right;
 	width: 60%;
 	margin-left: 9rem;
+	
+	float: right;
 }
 
 .bg-block:last-child {
 	height: 1200px;
+	
 	text-align: center;
 }
 
@@ -174,9 +189,10 @@ header .btn {
 
 section h2 {
 	font-size: 2.8rem;
+	font-weight: 700;
+	
 	margin-top: 2rem;
 	margin-bottom: 1.5rem;
-	font-weight: 700;
 }
 
 section p {
@@ -198,6 +214,24 @@ section p {
 .btn-download-bottom {
 	background-color: #8ea1e1;
 	color: white;
+	
 	font-size: 1.2rem;
+}
 
+footer {
+	background-color: #23272a;
+	color: white;
+}
+
+.left-footer {
+	float: left;
+}
+
+.language-selection img{
+	height: 1em;
+}
+
+.bottom-nav>ul>li {
+	display: inline-block;
+	float: right;
 }
