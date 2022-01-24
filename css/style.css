@@ -43,6 +43,7 @@ a {
 	height: 2rem;
 }
 
+/* Buttons rules */
 .btn {
 	display: inline-block;
 	height: 2.6em;
@@ -52,6 +53,21 @@ a {
 	padding: 0 1.3em;
 	
 	font-weight: 500;
+}
+
+.btn-white {
+	background-color: white;
+	color: black;
+}
+
+.btn-black {
+	background-color: #23272a;
+	color: white;
+}
+
+.btn-purple {
+	background-color: #8ea1e1;
+	color: white;
 }
 
 /* Top navbar rules */
@@ -87,13 +103,8 @@ a {
 	color: white;
 }
 
-.btn-log-in, .btn-download-top {
-	background-color: white;
-	color: black;
 
-}
-
-.btn-log-in {
+.top-nav .btn {
 	position: absolute;
 	right: 0;
 	top: 50%;
@@ -139,9 +150,8 @@ header .btn {
 	font-size: 1.3rem;
 }
 
-.btn-open-in-browser {
-	background-color: #23272a;
-	color: white;
+header .btn+.btn {
+	margin-left: 1rem;
 }
 
 .fa-long-arrow-alt-down {
@@ -215,10 +225,7 @@ section p {
 	background-repeat: no-repeat;
 }
 
-.btn-download-bottom {
-	background-color: #8ea1e1;
-	color: white;
-	
+.bg-block:last-child .btn {
 	font-size: 1.2rem;
 }
 
@@ -227,17 +234,39 @@ section p {
 footer {
 	background-color: #23272a;
 	color: white;
+
+	padding: 5rem 0;
+
+	font-size: .8rem;
+}
+
+footer a {
+	color: white;
 }
 
 .left-footer {
-	width: 35%;
+	width: 30%;
 	float: left;
 }
 
+footer h4, footer h5{
+	color: #7289da;
+}
 
+.left-footer h4 {
+	font-size: 1.5rem;
+}
+
+.language-selection {
+	margin: 1rem 0;
+}
 
 .language-selection img{
 	height: 1em;
+}
+
+.social-media a {
+	margin: .5rem;
 }
 
 .bottom-nav {
@@ -249,3 +278,23 @@ footer {
 	float: left;
 	width: 25%;
 }
+
+.bottom-nav h5 {
+	font-size: 1rem;
+	margin-bottom: .5em;
+}
+
+.bottom-nav a {
+	line-height: 2em;
+}
+
+.footer-bottom {
+	border-top: 1px solid #7289da;
+	padding-top: 1rem;
+}
+
+.footer-bottom .btn {
+	float: right;
+
+}
+
