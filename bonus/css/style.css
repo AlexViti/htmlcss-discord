@@ -167,6 +167,8 @@ header .btn+.btn {
 .bg-block {
 	width: 100%;
 	position: relative;
+	
+	margin-top: -4px; /*waves fix*/
 }
 
 .bg-block:not(:last-child) {
@@ -299,3 +301,13 @@ footer h4, footer h5{
 
 }
 
+/* Waves rules */
+
+main .wave-1hkxOo path {
+	fill: #f6f6f6;
+}
+
+main .wave-1hkxOo:nth-of-type(2) path {
+	transform-origin: center;
+	transform: rotateX(180deg);
+}
