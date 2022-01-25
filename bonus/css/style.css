@@ -39,6 +39,10 @@ a {
 	text-decoration: none;
 }
 
+li>a:hover {
+	text-decoration: underline;
+}
+
 .logo {
 	height: 2rem;
 }
@@ -55,9 +59,17 @@ a {
 	font-weight: 500;
 }
 
+.btn:hover {
+	box-shadow: 0 7px 15px #00000040;
+}
+
 .btn-white {
 	background-color: white;
 	color: black;
+}
+
+.btn-white:hover {
+	color: #5865f2;
 }
 
 .btn-black {
@@ -68,6 +80,10 @@ a {
 .btn-purple {
 	background-color: #8ea1e1;
 	color: white;
+}
+
+.btn:not(.btn-white):hover {
+	filter: brightness(1.2);
 }
 
 /* Top navbar rules */
