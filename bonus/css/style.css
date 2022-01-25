@@ -272,11 +272,12 @@ footer h4, footer h5{
 }
 
 .left-footer h4 {
-	font-size: 1.5rem;
+	font-size: 1.6rem;
+	width: 60%;
 }
 
 .language-selection {
-	margin: 1rem 0;
+	margin: 1.5rem 0;
 }
 
 .language-selection img{
@@ -285,6 +286,7 @@ footer h4, footer h5{
 
 .social-media a {
 	margin: .5rem;
+	font-size: 1.2rem;
 }
 
 .bottom-nav {
